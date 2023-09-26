@@ -1,59 +1,47 @@
 .card {
-    width: 400px;
-    margin: 0 auto;
-    border: 1px solid;
-    padding: 10px;
-    text-align: center;
-}
-.details {
-  margin: 10 px;
-  padding: 10px;
+  max-width: 400px;
+  margin: 16px;
+  padding: 16px;
+  border: 2px solid #ccc;
+  background-color: #FF0000;
+  border-radius: 8px;
+  cursor: pointer;
+
 }
 
-.details summary{
-  font-size: 12px;
+.card-img {
+  width: 150px; 
+  margin-right: 12px;
+  border-radius: 8px;
 }
 
-.buttons {
-  display: block;
+.card-content {
+  flex-grow: 1;
 }
-
-.buttons button:focus, 
-.buttons button:hover {
-  background-color: pink;
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  text-align: center;
 }
-
-.buttons button:active {
-  bakground-color: blue;
+.card-description.hidden {
+  text-align: center;
 }
-
-.button[data-toggle-btn] {
-  padding: 10px;
-  font-size: 15px;
-  display: block;
+.details-button {
+  display: Details;
 }
-
-@media only screen and (max-width: 1200px){
-  .wrapper {
-    background-color: pink;
+.hotpink-bg{
+background:hotpink;
+}
+.wrapper{}
+.highlighted{
+background-color: hotpink;
+}
+@media screen and (max-width: 790px) {
+  .details-button {
+      display: none;
   }
 }
-@media only screen and (max-width: 600px){
-  .wrapper {
-    background-color: purple;
+  .card-img {
+      width: 100%;
+      height: auto;
   }
-}
-@media only screen and (max-width: 425px){
-  .wrapper {
-    font-weight: normal;
-  }
-  .wrapper .header h3 {
-    font-size: 12px;
-  }
-  .wrapper .header h4 {
-    font-size: 10px !important;
-  }
-  details {
-    display: none;
-  }
-}
